@@ -32,3 +32,7 @@ func update_movement():
 		motion.x = lerp(motion.x, 0, FRICTION)
 	
 	
+func _input(event: InputEvent) -> void:
+	if Input.is_action_pressed("Light_Toggle"):
+		#This says: whatever you are not, become
+		$Torch.enabled = !$Torch.enabled
