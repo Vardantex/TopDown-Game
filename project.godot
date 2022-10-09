@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="TopDown Game"
-run/main_scene="res://Levels/TemplateLevel.tscn"
+run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
 [gui]
@@ -76,6 +76,12 @@ Light_Toggle={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="TileMap"
+2d_physics/layer_3="NPC"
 
 [physics]
 
