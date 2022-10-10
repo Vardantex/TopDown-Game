@@ -1,7 +1,104 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Tiles/Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/GFX/Tilesheet/tilesheet_complete.png" type="Texture" id=3]
+[ext_resource path="res://Interface/VisionMode.tscn" type="PackedScene" id=4]
+
+[sub_resource type="OccluderPolygon2D" id=6]
+polygon = PoolVector2Array( 3.73193, 46.1198, 47.5477, 3.42029, 59.2692, 14.5836, 17.407, 59.5157 )
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 60.1063, 14.8627, 15.4532, 60.0739, 4.29004, 46.1198, 48.3849, 2.86212 )
+
+[sub_resource type="OccluderPolygon2D" id=7]
+polygon = PoolVector2Array( 23.0789, 16.0693, 34.5212, 15.5111, 47.6381, 32.5351, 47.08, 48.7219, 35.6376, 48.4427, 15.5437, 43.1402, 13.032, 31.6979 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 23.3579, 16.9066, 34.5211, 16.3484, 47.0798, 30.8606, 47.3589, 47.8846, 33.684, 48.4427, 14.7064, 43.1402, 14.7064, 32.256 )
+
+[sub_resource type="OccluderPolygon2D" id=8]
+polygon = PoolVector2Array( 35.5391, 30.1218, 28.8411, 43.5178, 48.0978, 54.4019, 56.1912, 41.5642 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 31.911, 8.91162, 36.9344, 23.7029, 14.0498, 30.68, 11.8171, 22.3075, 10.9799, 15.6096 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 54.7957, 43.2386, 48.0978, 54.681, 29.6783, 42.1223, 36.3763, 30.68 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "tilesheet_complete.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 1344, 576, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 6 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "tilesheet_complete.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 1280, 512, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/occluder = SubResource( 7 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "tilesheet_complete.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 1152, 640, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/occluder = SubResource( 8 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
 
 [node name="TemplateLevel" type="Node2D"]
 
@@ -24,6 +121,11 @@ tile_data = PoolIntArray( -131072, 10, 589827, -131071, 10, 458763, -131070, 10,
 
 [node name="Destinations" type="Node" parent="Navigation2D"]
 
+[node name="Furniture" type="TileMap" parent="Navigation2D"]
+tile_set = SubResource( 5 )
+bake_navigation = true
+format = 1
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 414, 263 )
 rotation = -3.05537
@@ -31,9 +133,10 @@ rotation = -3.05537
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 
-[node name="Lighting" type="CanvasModulate" parent="."]
-color = Color( 0.360784, 0.290196, 0.290196, 1 )
+[node name="VisionMode" parent="." instance=ExtResource( 4 )]
 
 [node name="Cameras" type="Node" parent="."]
 
 [node name="Guards" type="Node" parent="."]
+
+[node name="Doors" type="Node" parent="."]

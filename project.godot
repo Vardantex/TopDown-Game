@@ -24,6 +24,10 @@ config/name="TopDown Game"
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+gdscript/completion/autocomplete_setters_and_getters=true
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
@@ -74,6 +78,11 @@ ARROW_RIGHT={
 Light_Toggle={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Lighting={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":71,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

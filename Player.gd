@@ -36,3 +36,7 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_pressed("Light_Toggle"):
 		#This says: whatever you are not, become
 		$Torch.enabled = !$Torch.enabled
+	
+	if Input.is_action_pressed("Lighting"):
+		#? Create a groupd called Interface and create a method
+		get_tree().call_group("Interface", "cycle_vision_mode")

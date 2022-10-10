@@ -29,11 +29,17 @@ position = Vector2( 543, 460 )
 [node name="Destination3" type="Position2D" parent="Navigation2D/Destinations" index="3"]
 position = Vector2( 543, 110 )
 
+[node name="Furniture" parent="Navigation2D" index="2"]
+tile_data = PoolIntArray( 196614, 0, 0, 262151, 1, 0 )
+
 [node name="Player" parent="." index="2"]
 position = Vector2( 1262, 61 )
 
-[node name="Lighting" parent="." index="3"]
-color = Color( 1, 1, 1, 1 )
+[node name="Torch" parent="Player" index="2"]
+visible = false
+
+[node name="VisionMode" parent="." index="3"]
+visible = false
 
 [node name="Guard" parent="." index="5" instance=ExtResource( 2 )]
 position = Vector2( 141, 265 )
@@ -45,3 +51,5 @@ position = Vector2( 76, 93 )
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="." index="7"]
 visible = false
 navpoly = SubResource( 1 )
+
+[editable path="Player"]
