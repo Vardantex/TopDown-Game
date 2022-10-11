@@ -12,8 +12,8 @@ func _ready() -> void:
 func _on_Door_body_entered(body: Node) -> void:
 	if body.collision_layer == 1:
 		can_click == true
-	else:
 		open()
+#	else:
 
 
 func _on_Door_body_exited(body: Node) -> void:

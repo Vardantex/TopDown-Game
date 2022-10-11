@@ -34,6 +34,7 @@ func update_movement():
 	
 func _input(event: InputEvent) -> void:
 	if Input.is_action_pressed("Light_Toggle"):
+		print("Toggle light")
 		#This says: whatever you are not, become
 		$Torch.enabled = !$Torch.enabled
 	

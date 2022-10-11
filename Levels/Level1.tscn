@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Levels/TemplateLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://NPC/Guard.tscn" type="PackedScene" id=2]
 [ext_resource path="res://NPC/Camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Doors/Door.tscn" type="PackedScene" id=4]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1342, -68, 1346, 192, 1152, 191, 1149, 128, 1153, -4, 67, 576, 63, -65, 770, -61, 771, -1, 768, 128, 1092, 897, 1407, 896, 1407, 1215, 578, 1214, 578, 897, 961, 888, 1085, 386, 957, 510, 769, 385, 766, 514, 1154, -69, 765, 573 )
@@ -51,5 +52,13 @@ position = Vector2( 76, 93 )
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="." index="7"]
 visible = false
 navpoly = SubResource( 1 )
+
+[node name="Door" parent="Doors" index="0" instance=ExtResource( 4 )]
+position = Vector2( 1113, 159 )
+rotation = -1.5708
+
+[node name="Door2" parent="Doors" index="1" instance=ExtResource( 4 )]
+position = Vector2( 1113, -34 )
+rotation = 1.5708
 
 [editable path="Player"]
